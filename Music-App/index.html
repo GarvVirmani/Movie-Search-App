@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Music Player</title>
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/2616bc9d69.js"
@@ -13,13 +13,16 @@
   <body>
     <section id="container">
       <h1>MUSIC PLAYER</h1>
+      
       <ul id="song-list"></ul>
-
+      
+      <div id="now-playing"></div>
+      
       <div id="play-section">
         <input type="range" id="progress" />
-        <button><i class="fa-solid fa-backward"></i></button>
+        <button id="back-btn"><i class="fa-solid fa-backward"></i></button>
         <button id="play-btn"><i class="fa-solid fa-play"></i></button>
-        <button><i class="fa-solid fa-forward"></i></button>
+        <button id="frwd-btn"><i class="fa-solid fa-forward"></i></button>
       </div>
     </section>
 
