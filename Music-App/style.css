@@ -1,1 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
 
+body {
+    background-color: #1e1e1e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+#container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f1c40f;
+}
+
+#song-list {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+#song-list li {
+    font-size: 18px;
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+#song-list li:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+#song-list .playing {
+    background-color: #f39c12;
+    color: #333;
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+#song-list .playing:hover {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+#now-playing {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #f1c40f;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+#now-playing:hover {
+    background-color: #f39c12;
+    color: #333;
+    transform: scale(1.05);
+}
+
+#progress {
+    width: 100%;
+    margin: 20px 0;
+    height: 8px;
+    background-color: #555;
+    border-radius: 5px;
+    appearance: none;
+    outline: none;
+}
+
+#progress::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #f1c40f;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#progress::-webkit-slider-thumb:hover {
+    background-color: #e67e22;
+}
+
+#progress::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #f1c40f;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#progress::-moz-range-thumb:hover {
+    background-color: #e67e22;
+}
+
+button {
+    background-color: #333;
+    border: none;
+    color: #f1c40f;
+    font-size: 24px;
+    padding: 15px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #444;
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: #f39c12;
+}
+
+#play-btn .fa-play, #play-btn .fa-pause {
+    font-size: 30px;
+}
+
+#back-btn i, #frwd-btn i {
+    font-size: 28px;
+}
